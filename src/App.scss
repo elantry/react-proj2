@@ -1,0 +1,41 @@
+@import "./style/variable.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: $firstColor;
+  margin-top: 75px;
+  overflow: hidden;
+}
+.project {
+  width: 60%;
+  margin: 20px auto;
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 70px 70px auto 50px;
+  grid-template-areas: "progressbar progressbar progressbar progressbar" "header header header header" "body body body body" " footer footer footer footer";
+  .progressbar {
+    margin: 30px 0 0 0;
+    box-sizing: border-box;
+    grid-area: progressbar;
+    background-color: $firstColor;
+  }
+  .header1 {
+    margin: 30px auto;
+    grid-area: header;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: #324356;
+  }
+  .body {
+    width: 100%;
+    grid-area: body;
+    margin: 20px 0 10px 0;
+    background-color: $secondColor;
+    height: 400px;
+  }
+}

@@ -1,0 +1,28 @@
+.form5 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .img {
+    width: 250px;
+    height: auto;
+  }
+  .img2 {
+    width: 150px;
+    height: auto;
+  }
+  .try {
+    cursor: pointer;
+    color: rgb(61, 61, 179);
+  }
+  .good {
+    font-size: 15px;
+  }
+  .bad {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(233, 101, 101);
+  }
+}

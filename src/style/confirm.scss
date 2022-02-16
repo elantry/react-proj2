@@ -1,0 +1,50 @@
+.form4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 400px 70px;
+  grid-template-areas: "image image" "footer footer";
+  .image {
+    grid-area: image;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    .img {
+      width: 285px;
+      height: auto;
+    }
+  }
+  .footer {
+    width: 100%;
+    grid-area: footer;
+    height: 50px;
+   margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f0ebebf3;
+    .button {
+      cursor: pointer;
+      min-width: 160px;
+      border: none;
+      max-height: 35px;
+      margin-left: 20px;
+      background-color: #1777fb;
+      color: #fff;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .back {
+      cursor: pointer;
+      min-width: 120px;
+      max-height: 35px;
+      border: none;
+      background-color: #adb3bb;
+      color: rgb(54, 47, 47);
+      border-radius: 5%;
+      opacity: 0.5;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}

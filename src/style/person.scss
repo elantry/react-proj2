@@ -1,0 +1,213 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 75px);
+  grid-template-areas: "name name" "email email" "country phone" "password password" "repeat repeat" "footer footer";
+  .label1 {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #324356dd;
+  }
+  .label2 {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #e6848c;
+  }
+  input {
+    box-sizing: border-box;
+    margin: 0;
+    outline-width: 0;
+    border-width: 0;
+    width: 100%;
+    padding: 0;
+    color: #324356;
+  }
+  @mixin style {
+    border-radius: 3px;
+    border: 1px solid rgb(146, 138, 138);
+    padding: 4px 8px;
+    margin: 5px auto;
+    width: 97%;
+  }
+  @mixin style2 {
+    border-radius: 3px;
+    border: 1px solid rgb(228, 153, 153);
+    padding: 4px 8px;
+    color: rgb(228, 153, 153);
+    margin: 5px auto;
+    width: 97%;
+    height: 68%;
+    position: relative;
+  }
+
+  .name {
+    grid-area: name;
+    @include style();
+  }
+
+  .name.themename {
+    grid-area: name;
+    @include style2();
+  }
+  .email {
+    grid-area: email;
+    @include style();
+  }
+  .email.themeemail {
+    grid-area: email;
+    @include style2();
+  }
+  .country {
+    grid-area: country;
+    @include style();
+    .country2 {
+      width: 100% !important;
+      height: 30px;
+      opacity: 0.8;
+      background: #ffffff;
+      border: 1px solid #cacaca;
+      border-radius: 5px;
+    }
+  }
+  .country.themecountry {
+    grid-area: country;
+    @include style2();
+    .country2 {
+      width: 100% !important;
+      height: 20px;
+      opacity: 0.8;
+      background: #ffffff;
+      border: 1px solid #cacaca;
+      border-radius: 5px;
+    }
+  }
+  .phone {
+    grid-area: phone;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 35% 65%;
+    grid-template-areas: "div label1" "div input";
+    @include style();
+    .label1 {
+      grid-area: label1;
+    }
+    .div {
+      grid-area: div;
+      text-align: center;
+      margin-top: 15px;
+      margin-right: 10px;
+    }
+    .input {
+      grid-area: input;
+      font-size: 15px !important;
+    }
+  }
+  .phone.themephone {
+    grid-area: phone;
+    .form-control {
+      width: 100% !important;
+      height: 30px;
+    }
+    @include style2();
+  }
+  @mixin eye {
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .pass {
+    grid-area: password;
+    @include style();
+    position: relative;
+    .eye1 {
+      @include eye;
+    }
+  }
+  .pass.themepass {
+    grid-area: password;
+    @include style2();
+  }
+  .repass {
+    grid-area: repeat;
+    @include style();
+    position: relative;
+    .eye2 {
+      @include eye;
+    }
+  }
+  .repass.themerepass {
+    grid-area: repeat;
+    @include style2();
+  }
+  .style1 {
+    font-size: 12px;
+    color: #e6848c;
+    font-weight: 500;
+    position: absolute;
+    top: 50px;
+    letter-spacing: 0.5px;
+  }
+  .style11 {
+    font-size: 12px;
+    color: #5149c0;
+    font-weight: 500;
+    position: absolute;
+    top: 40px;
+    letter-spacing: 0.5px;
+  }
+  .footer {
+    width: 100%;
+    grid-area: footer;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0ebebf3;
+
+    .button {
+      cursor: pointer;
+      min-width: 160px;
+      max-height: 35px;
+      border: none;
+      margin-left: 20px;
+      background-color: #1777fb;
+      color: #fff;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .back {
+      cursor: pointer;
+      min-width: 120px;
+      max-height: 35px;
+
+      background-color: #adb3bb;
+      color: rgb(54, 47, 47);
+      border-radius: 5%;
+      opacity: 0.5;
+      font-size: 15px;
+      text-align: center;
+    }
+    .a {
+      position: relative;
+      margin-left: 5px;
+      text-decoration: none;
+    }
+    .a::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 8px;
+      display: inline-block;
+      text-decoration: none;
+      border: 5px solid transparent;
+      border-left-width: 0;
+      border-right-color: #324356;
+    }
+  }
+}

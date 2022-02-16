@@ -1,0 +1,50 @@
+.head {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  .bar {
+    border: 10px solid white;
+    position: absolute;
+    background-color: #1777fb;
+    left: 12px;
+    height: 26px;
+    top: 12px;
+  }
+  .bar2 {
+    border: 10px solid white;
+    position: absolute;
+    background-color: #d3d8e0;
+    width: 97%;
+    left: 12px;
+    height: 26px;
+    top: 12px;
+    color: #dbdfe6;
+  }
+  @mixin hi {
+    position: relative;
+    border-radius: 50%;
+    width: 217% !important;
+    height: auto;
+    border: 2px solid;
+    background-color: #fff;
+    text-align: center;
+    line-height: 52px;
+    font-size: 28px;
+  }
+  .icon1 {
+    @include hi();
+  }
+
+  .icon2 {
+    @include hi();
+  }
+  .icon3 {
+    @include hi();
+    width: 170% !important;
+  }
+  .icon4 {
+    @include hi();
+    width: 170% !important;
+  }
+}
