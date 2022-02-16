@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-proj2/static/css/main.78ff9124.chunk.css",
+    "main.js": "/react-proj2/static/js/main.20e43579.chunk.js",
+    "main.js.map": "/react-proj2/static/js/main.20e43579.chunk.js.map",
+    "runtime-main.js": "/react-proj2/static/js/runtime-main.88f2d5c2.js",
+    "runtime-main.js.map": "/react-proj2/static/js/runtime-main.88f2d5c2.js.map",
+    "static/js/2.f440dd15.chunk.js": "/react-proj2/static/js/2.f440dd15.chunk.js",
+    "static/js/2.f440dd15.chunk.js.map": "/react-proj2/static/js/2.f440dd15.chunk.js.map",
+    "static/js/3.a7398a81.chunk.js": "/react-proj2/static/js/3.a7398a81.chunk.js",
+    "static/js/3.a7398a81.chunk.js.map": "/react-proj2/static/js/3.a7398a81.chunk.js.map",
+    "index.html": "/react-proj2/index.html",
+    "static/css/main.78ff9124.chunk.css.map": "/react-proj2/static/css/main.78ff9124.chunk.css.map",
+    "static/js/2.f440dd15.chunk.js.LICENSE.txt": "/react-proj2/static/js/2.f440dd15.chunk.js.LICENSE.txt",
+    "static/media/blue-mailbox.791144d7.jpg": "/react-proj2/static/media/blue-mailbox.791144d7.jpg",
+    "static/media/loader.8a9de4a8.gif": "/react-proj2/static/media/loader.8a9de4a8.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88f2d5c2.js",
+    "static/js/2.f440dd15.chunk.js",
+    "static/css/main.78ff9124.chunk.css",
+    "static/js/main.20e43579.chunk.js"
+  ]
+}
